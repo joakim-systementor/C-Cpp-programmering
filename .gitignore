@@ -5,7 +5,9 @@
 *.slo
 *.lo
 *.o
+*.ko
 *.obj
+*.elf
 
 # Precompiled Headers
 *.gch
@@ -13,6 +15,8 @@
 
 # Linker files
 *.ilk
+*.map
+*.exp
 
 # Debugger Files
 *.pdb
@@ -37,6 +41,8 @@
 *.exe
 *.out
 *.app
+*.hex
+*.bin
 
 # Build directories
 build/
@@ -47,7 +53,7 @@ build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
+# Makefile
 install_manifest.txt
 compile_commands.json
 
@@ -62,6 +68,21 @@ vcpkg_installed/
 
 # debug information files
 *.dwo
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
 
 # test output & cache
 Testing/
