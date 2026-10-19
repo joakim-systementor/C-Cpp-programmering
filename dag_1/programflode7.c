@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (void) {
-    char val = 'g';
+    char val = 'c';
     
     switch (val) {
         case 'a':
@@ -17,7 +17,7 @@ int main (void) {
             printf("D");
             break;
         default:
-            printf("No match found. едц\n");
+            printf("No match found.\n");
     }
     
     return 0;
