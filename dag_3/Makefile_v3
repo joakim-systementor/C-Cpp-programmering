@@ -1,0 +1,22 @@
+CC = gcc
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
+TARGET = calculator.exe
+SOURCES = main.c math_utils.c
+OBJECTS = main.o math_utils.o
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(TARGET)
+
+main.o: main.c
+	$(CC) $(CFLAGS) main.c -c -o main.o
+
+math_utils.o: math_utils.c
+	$(CC) $(CFLAGS) math_utils.c -c -o math_utils.o 
+
+run: $(TARGET)
+	./$(TARGET)
+
+clean:
+	rm -f $(TARGET) $(OBJECTS)
+
+.PHONY: run clean
