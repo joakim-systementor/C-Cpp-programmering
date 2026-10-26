@@ -4,7 +4,9 @@ void function(int, int[], char[]); // Deklaration
 void function2(void) { printf("Hej från function2!\n"); } // Deklaration och definition i ett. MÅSTE ske ovanför platsen vi gör funktionanropet
 
 int main(void) {
+    int a = 20, b; // är samma sak som:
     int a = 20;
+    int b;
     int ar[5] = { 10, 20, 30, 40, 50 };
     char str[30] = "geeksforgeeks";
     function(a, &ar[0], &str[0]); // Anrop
