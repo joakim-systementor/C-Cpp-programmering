@@ -1,0 +1,15 @@
+CC = gcc
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
+TARGET = calculator.exe
+SOURCE = main.c
+
+$(TARGET): $(SOURCE)
+	$(CC) $(CFLAGS) $(SOURCE) -o $(TARGET)
+
+run: $(TARGET)
+	./$(TARGET)
+
+clean:
+	rm -f $(TARGET)
+
+.PHONY: run clean

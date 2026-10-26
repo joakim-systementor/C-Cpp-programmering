@@ -1,0 +1,2 @@
+prog.exe: function.c
+	gcc -std=c11 -Wall -Wextra -Wpedantic function.c -o prog.exe
