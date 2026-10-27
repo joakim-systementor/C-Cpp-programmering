@@ -1,0 +1,20 @@
+CC = gcc
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
+DAY3_FOLDER = C-Cpp-programmering/dag_3
+$(DAY3_FOLDER)/TARGET = calculator.exe
+SOURCES = $(DAY3_FOLDER)/main.c $(DAY3_FOLDER)/math_utils.c
+OBJECTS = $(SOURCES:.c=.o)
+
+$(TARGET): $(OBJECTS)
+	$(CC) -o $@ $^
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+run: $(TARGET)
+	./$(TARGET)
+
+clean:
+	rm -f $(TARGET) $(OBJECTS)
+
+.PHONY: run clean
