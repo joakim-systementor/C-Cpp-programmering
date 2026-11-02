@@ -43,6 +43,7 @@
 *.app
 *.hex
 *.bin
+prog
 
 # Build directories
 build/
