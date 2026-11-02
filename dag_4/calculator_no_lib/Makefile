@@ -1,5 +1,7 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -Wpedantic -Iinclude
+LDFLAGS =
+LDLIBS = -lm
 TARGET = build/calculator
 SOURCES = $(wildcard src/*.c)
 OBJECTS = $(patsubst src/%.c,build/%.o,$(SOURCES))
@@ -7,7 +9,7 @@ OBJECTS = $(patsubst src/%.c,build/%.o,$(SOURCES))
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
-	$(CC) $(LDFLAGS) -o $@ $(OBJECTS)
+	$(CC) $(LDFLAGS) $(LDLIBS) -o $@ $(OBJECTS)
 
 build/%.o: src/%.c $(wildcard include/*.h) | build
 	$(CC) $(CFLAGS) -c $< -o $@
