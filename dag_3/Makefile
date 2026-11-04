@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
 TARGET = calculator.exe
-SOURCES = main.c math_utils.c
+SOURCES = main_visibility.c visibility_public.c visibility_private.c
 OBJECTS = $(SOURCES:.c=.o)
 
 $(TARGET): $(OBJECTS)
@@ -14,6 +14,6 @@ run: $(TARGET)
 	./$(TARGET)
 
 clean:
-	rm -f $(TARGET) $(OBJECTS)
+	rm -f $(TARGET) $(OBJECTS) $(wildcard %.o)
 
 .PHONY: run clean
