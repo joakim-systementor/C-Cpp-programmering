@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
 TARGET = prog.exe
-SOURCES = strings4.c
+SOURCES = strings7.c
 OBJECTS = $(SOURCES:.c=.o)
 
 $(TARGET): $(OBJECTS)
