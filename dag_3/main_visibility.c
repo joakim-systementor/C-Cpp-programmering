@@ -3,7 +3,7 @@
 #include "visibility_private.h"
 
 extern const int not_actually_private_value;
-extern const int private_value;
+extern const int private_value; // Försöker hitta private_value i en extern fil, men kommer inte lyckas pga static
 
 int main(void) {
     function_public();
