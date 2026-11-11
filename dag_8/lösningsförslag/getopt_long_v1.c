@@ -5,8 +5,7 @@
 #include <ctype.h>
 #include <getopt.h>
 
-static bool parse_long(const char *str, long *value)
-{
+static bool parse_long(const char *str, long *value) {
     char *end;
 
     errno = 0;
@@ -28,8 +27,7 @@ static bool parse_long(const char *str, long *value)
     return true;
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     static const struct option long_options[] = {
         {"upper", no_argument, NULL, 'u'},
         {"help", no_argument, NULL, 'h'},
