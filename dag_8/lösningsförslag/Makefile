@@ -1,7 +1,8 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
 TARGET = prog.exe
-SOURCES = inputs.c
+INPUT_PARAMETERS = 
+SOURCES = input_file.c
 OBJECTS = $(SOURCES:.c=.o)
 
 $(TARGET): $(OBJECTS)
@@ -11,7 +12,7 @@ $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 run: $(TARGET)
-	./$(TARGET) Joakim 39
+	./$(TARGET) $(INPUT_PARAMETERS)
 
 clean:
 	rm -f $(TARGET) $(OBJECTS) $(wildcard *.o)

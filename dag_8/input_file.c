@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    FILE *file = fopen("../dag_6/strings1.c", "r");
+    FILE *file = fopen("test.txt", "r");
     char line[100];
 
     if (file == NULL) {
