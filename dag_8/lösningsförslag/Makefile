@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
 TARGET = prog.exe
-INPUT_PARAMETERS = --upper Joakim 39
-SOURCES = getopt_long_v1.c
+INPUT_PARAMETERS = --upper -a 7 Joakim 39
+SOURCES = getopt_long_v2.c
 OBJECTS = $(SOURCES:.c=.o)
 
 $(TARGET): $(OBJECTS)
