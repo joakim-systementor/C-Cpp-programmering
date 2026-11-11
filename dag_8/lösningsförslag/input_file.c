@@ -6,7 +6,7 @@ int main(void) {
     int line_no = 0;
 
     if (file == NULL) {
-        printf("Error! Could not open file \"namn.txt\"!");
+        printf("Error! Could not open file \"namn.txt\"!\n");
         return 1;
     }
 
