@@ -1,0 +1,3 @@
+Hej!
+Nu läser vi från fil.
+Hej då!
