@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
 TARGET = prog.exe
-INPUT_PARAMETERS = namn.txt
-SOURCES = input_file_as_parameter.c
+INPUT_PARAMETERS = -u Joakim 39
+SOURCES = getopt_v1.c
 OBJECTS = $(SOURCES:.c=.o)
 
 $(TARGET): $(OBJECTS)
