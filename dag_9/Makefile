@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -std=c11 -Wall -Wextra -Wpedantic -g
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
 TARGET = prog.exe
-SOURCES = palindrome_v2.c
+SOURCES = palindrome_v3.c
 OBJECTS = $(SOURCES:.c=.o)
 
 $(TARGET): $(OBJECTS)
