@@ -4,8 +4,8 @@
         "name": "AVR",
         "includePath": [
           "/avr/include",
-          "/avr/lib/gcc/avr/14.1.0/include",  // Justera versionsnumret!
-          "/avr/lib/gcc/avr/14.1.0/include-fixed",
+          "/avr/lib/gcc/avr/16.1.0/include",  // Justera versionsnumret om ni tagit ner en annan version!
+          "/avr/lib/gcc/avr/16.1.0/include-fixed",
           "${workspaceFolder}"
         ],
         "defines": [
